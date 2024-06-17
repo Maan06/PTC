@@ -41,11 +41,7 @@ class AppliedCandidateController extends Controller
         if($request->ajax())
         {
             $query = DB::table('applied_candidates');
-
-            // if ($request->status && $request->status != 'All') {
-            //     $query->where("is_active", $request->status);
-            // }
-
+            
             $data = $query->where("status", 'Y')->orderBy('id', 'desc')->get();
             return datatables()->of($data)
             ->addColumn('action', function ($data) {
