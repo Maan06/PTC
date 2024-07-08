@@ -31,19 +31,6 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
 </head>
-<style>
-    .navbar-nav li a {
-        color: #000;
-    }
-    .navlink::before {
-        background-color: #000;
-    }
-    @media (max-width: 991px) {
-    .navbar-collapse {
-        background: #fff;
-    }
-}
-</style>
 <body>
     <!-- header starts -->
     <header>

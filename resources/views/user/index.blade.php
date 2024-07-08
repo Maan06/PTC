@@ -6,9 +6,9 @@
             <div class="home-top-heading d-flex justify-content-center flex-sm-row flex-column-reverse">
                 <div
                     class="home-top-sc-icon d-flex flex-sm-column justify-content-sm-center justify-content-between col-sm-2 col-4">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/people/Pilare-Trading-Company/61559142998770/?mibextid=ZbWKwL" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/pilaretradingcompany/" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/pilaretradingcompany/" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                     <h1>WE FOCUS ON <br>CUSTOMER EXCELLENCE</h1>
@@ -23,15 +23,15 @@
         </div>
         <ul class="slides">
             <li>
-                <div class="slide-image slide-overlay" data-bg="{{asset('assets/images/home-banner-1.jpg')}}" style="background-image: url({{asset('assets/images/home-banner-1.jpg')}}); transform-origin: left center;"
+                <div class="slide-image" data-bg="{{asset('assets/images/home-banner-1.jpg')}}" style="background-image: url({{asset('assets/images/home-banner-1.jpg')}}); transform-origin: left center;"
                     data-flex-start="center left "></div>
             </li>
             <li>
-                <div class="slide-image slide-overlay" data-bg="{{asset('assets/images/home-banner-2.jpg')}}" style="background-image: url({{asset('assets/images/home-banner-2.jpg')}}); transform-origin: left center;"
+                <div class="slide-image" data-bg="{{asset('assets/images/home-banner-2.jpg')}}" style="background-image: url({{asset('assets/images/home-banner-2.jpg')}}); transform-origin: left center;"
                     data-flex-start="center left "></div>
             </li>
             <li>
-                <div class="slide-image slide-overlay" data-bg="{{asset('assets/images/home-banner-3.jpg')}}" style="background-image: url({{asset('assets/images/home-banner-3.jpg')}}); transform-origin: left center;"
+                <div class="slide-image" data-bg="{{asset('assets/images/home-banner-3.jpg')}}" style="background-image: url({{asset('assets/images/home-banner-3.jpg')}}); transform-origin: left center;"
                     data-flex-start="center left "></div>
             </li>
         </ul>
@@ -332,21 +332,77 @@
 
     <!-- creative process -->
     <section class="creative-process position-relative">
-        <div class=" py-5 text-center">
+        <div class="py-5 text-center">
             <span
                 class="bg-secondary-color main-color text-capitalize px-2 rounded-5 py-1 fw-medium">How we do it</span>
             <h2 class="text-uppercase fw-bold mt-3 text-white">Our Creative Process</span></h2>
         </div>
         <div class="border-line">
             <div class="col-10 d-flex" style="position: absolute;top: -10px;">
-                <div class="col-3 text-center"><i class="fa-solid fa-chevron-right"></i></div>
-                <div class="col-3 text-center"><i class="fa-solid fa-chevron-right"></i></div>
-                <div class="col-3 text-center"><i class="fa-solid fa-chevron-right"></i></div>
-                <div class="col-3 text-center"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="col-3 text-center"></div>
+                <div class="col-3 text-center"></div>
+                <div class="col-3 text-center"></div>
+                <div class="col-3 text-center"></div>
+            </div>
+            <div class="btns col-md-3 position-relative w-100 container-lg">
+                <div class="customPreviousBtn2"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="customNextBtn2"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
         </div>
         <div class="container-lg">
-            <div class="grid-container">
+            <div class="owl-carousel creative-process-carousel">
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-1.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">Order confirmation</p>
+                            </div>                    
+                        </div>
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-2.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">procurement of goods</p>
+                            </div>                    
+                        </div>
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-3.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">Quality check</p>
+                            </div>                    
+                        </div>
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-4.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">labeling and packaging</p>
+                            </div>                    
+                        </div>
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-5.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">Logistics</p>
+                            </div>                    
+                        </div>
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-6.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">Custom</p>
+                            </div>                    
+                        </div>     
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-7.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">Sending documents</p>
+                            </div>                    
+                        </div>    
+                        <div class="item-logo item">                       
+                            <div><img src="{{asset('assets/images/icons/step-8.png')}}" alt=""></div>
+                            <div>
+                                <p class="text-white text-capitalize fw-semibold text-center mt-2">inland shipping procedures</p>
+                            </div>                    
+                        </div>
+            </div>
+
+
+            <!-- <div class="grid-container">
                 <div class="grid-item main">
                     <div class="items">
                         <div class="item-logo item1 col-md-3 col-sm-4 col-6 text-center">                       
@@ -400,7 +456,7 @@
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- creative process -->

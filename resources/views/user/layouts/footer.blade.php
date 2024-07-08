@@ -44,13 +44,13 @@
                     </div>
                     <ul class="p-0 footer-sc-icons d-flex mt-4">
                         <li>
-                            <a href=""><i class="fa-brands fa-facebook-f ms-0"></i></a>
+                            <a href="https://www.facebook.com/people/Pilare-Trading-Company/61559142998770/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f ms-0"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.instagram.com/pilaretradingcompany/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/company/pilaretradingcompany/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +58,7 @@
         </div>
         <hr>
         <div class="text-center">
-            <p class="fw-medium text-black text-capitalize">Copyright &copy;2023 <a href="/"
+            <p class="fw-medium text-black text-capitalize m-0">Copyright &copy;2023 <a href="/"
                     class="main-color text-decoration-none">Pilare Trading Company</a>, All Rights reserved</p>
         </div>
     </footer>
@@ -154,6 +154,34 @@
         owl.trigger('next.owl.carousel');
     });
     $('.customPreviousBtn').click(function () {
+        owl.trigger('prev.owl.carousel');
+    });
+
+    $('.creative-process-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        // autoplay: true,
+        // autoplayTimeout: 3000,
+        nav: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            800: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+
+    })
+    // Custom Button
+    var owl = $('.creative-process-carousel');
+    $('.customNextBtn2').click(function () {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.customPreviousBtn2').click(function () {
         owl.trigger('prev.owl.carousel');
     });
 

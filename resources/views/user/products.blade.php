@@ -14,9 +14,9 @@
             <div class="home-top-heading d-flex justify-content-center flex-sm-row flex-column-reverse">
                 <div
                     class="home-top-sc-icon d-flex flex-sm-column justify-content-sm-center justify-content-between col-sm-2 col-4">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/people/Pilare-Trading-Company/61559142998770/?mibextid=ZbWKwL" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/pilaretradingcompany/" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/pilaretradingcompany/" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                     <h1>Grow <br> Beyond <br> Borders...</h1>

@@ -20,11 +20,11 @@
             <div>
                 <form class="job-form">
                     <div class="career-top-heading px-3">
-                        <div class="col-11 col-sm-5 py-2">         
+                        <div class="col-11 col-sm-5 py-2 d-flex align-items-center">         
                             <span><i class="fa-solid fa-magnifying-glass text-secondary px-1"></i></span>
                             <input type="text" id="job_search" placeholder="Job Search" class="border-end">                   
                         </div>
-                        <div class="col-11 col-sm-5 py-2">
+                        <div class="col-11 col-sm-5 py-2 d-flex align-items-center">
                             <span><i class="fa-solid fa-location-dot text-secondary px-1"></i></span>
                             <input type="text" id="location" placeholder="Location">
                         </div>

@@ -80,6 +80,7 @@ p{
   content: "";
   position: absolute;
   background-color: #fff;
+  color: #fff !important;
 }
 
 .nav-link-ltr::before {
@@ -125,6 +126,7 @@ p{
 
   .navbar-nav li a{
     margin: 0;
+    color: #fff !important;
   }
   .navbar-nav li {
     margin: 15px 0;
@@ -262,6 +264,7 @@ header {
 @keyframes zoomIn {
   0% {
     transform: scale(1);
+    background-size: cover;
   }
 
   100% {
@@ -402,12 +405,19 @@ header {
 	}
 }
 
-.whyus-banner{
-  background-image: url(/assets/images/whyus-home-banner.jpg);
-  background-position: center;
-  background-size: cover;
+@media(min-width:768px){
+  .whyus-banner{
+    background-image: url(/assets/images/whyus-home-banner.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
+@media(max-width:767px){
+  .whyus-banner{
+    background-color: #193283 !important;
+  }
+}
 /* whyus cards css */
 .newsCard {
   position: relative;
@@ -421,81 +431,95 @@ header {
 }
 @media(max-width:767px){
   .newsCard {
-    height: 60vh;
+    height: fit-content;
     border: 1px solid #fff;
+    padding: 15px;
+  }
+  .newscard-icon{
+      rotate: 45deg;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 }
-.newsCaption {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  opacity: 1;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: #000; */
-  padding: 15px;
-  -webkit-transform: translateY(80%);
-          transform: translateY(60%);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
-  transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
-  transition: transform 0.4s, opacity 0.1s 0.3s;
-  transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
+@media(min-width:768px){
+  .newsCaption {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #000; */
+    padding: 15px;
+    -webkit-transform: translateY(80%);
+            transform: translateY(60%);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+    transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
+  }
+  
+  .newsCaption-title {
+    margin-top: 0px;
+  }
+  
+  .newsCaption-content {
+    margin: 0;
+    visibility: hidden;
+  }
+  
+  .newsCaption-link {
+    color: #fff;
+    text-decoration: underline;
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+            transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  }
+  .newsCaption-link:hover {
+    opacity: 1;
+  }
+  
+  .news-Slide-up:hover .newsCaption {
+    background-color: rgb(0 0 0 / 7%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
+    transition: opacity 0.1s, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
+  }
+  .news-Slide-up:hover .newsCaption-content{
+    visibility: visible;
+  }
+  .newscard-icon{
+    position: absolute;
+      bottom: 15px;
+      left: 15px;
+      rotate: 45deg;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 }
 
-.newsCaption-title {
-  margin-top: 0px;
-}
-
-.newsCaption-content {
-  margin: 0;
-  visibility: hidden;
-}
-
-.newsCaption-link {
-  color: #fff;
-  text-decoration: underline;
-  opacity: 1;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
-  -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-          transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-}
-.newsCaption-link:hover {
-  opacity: 1;
-}
-
-.news-Slide-up:hover .newsCaption {
-  background-color: rgb(0 0 0 / 7%);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(4px);
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
-  transition: opacity 0.1s, -webkit-transform 0.4s;
-  transition: transform 0.4s, opacity 0.1s;
-  transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
-}
-.news-Slide-up:hover .newsCaption-content{
-  visibility: visible;
-}
-.newscard-icon{
-  position: absolute;
-    bottom: 15px;
-    left: 15px;
-    rotate: 45deg;
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .owl-nav{
   display: none;
 }
@@ -544,11 +568,44 @@ transition: ease 0.3s;
   height: 65%;
   overflow: auto;
 } */
+
+
+.customPreviousBtn2{
+  position: absolute;
+  bottom: -15px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 99;
+  left: 0;
+  background: #dbdbdb;
+  padding: 4px 10px;
+  border-radius: 50px;
+  color: #fff;
+  transition: ease 0.3s;
+}
+.customNextBtn2{
+position: absolute;
+bottom: -15px;
+font-size: 15px;
+cursor: pointer;
+z-index: 99;
+right: 0;
+background: #dbdbdb;
+padding: 4px 10px;
+border-radius: 50px;
+color:#fff;
+transition: ease 0.3s;
+}
+.customPreviousBtn2:hover ,.customNextBtn2:hover {
+  background: var(--maincolor);
+  transition: ease 0.3s;
+}
 /* -------------about us page css starts----------------- */
 .about-us-banner{
   background-image: url(/assets/images/about-top-banner.jpg);
   height: 100vh;
   background-position: center;
+  background-size: cover;
 }
 .mission-vision-banner{
   background: url(/assets/images/wave-mask.png) no-repeat, linear-gradient(176.64deg, #93E6F8 2.77%, #001557 97.28%);
@@ -581,6 +638,7 @@ transition: ease 0.3s;
 .product-top-banner{
   background: url(/assets/images/products-top-banner.jpg);
   height: 100vh;
+  background-size: cover;
   background-position: center;
 }
 
@@ -610,6 +668,7 @@ transition: ease 0.3s;
   background: url(/assets/images/serivce-banner.jpg);
   height: 100vh;
   background-position: center;
+  background-size: cover;
 }
 
 /* ------------------------ career page css --------------------------- */
@@ -725,10 +784,17 @@ transition: ease 0.3s;
 }
 .creative-process{
   background-image: url(/assets/images/world.jpg);
-  height: 80vh;
+  height: 65vh;
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.creative-process-carousel img {
+  width: 75px !important;
+  margin: auto;
+}
+.creative-process-carousel .owl-item{
+  text-align: center;
 }
 .ptc-product-banner{
   background: linear-gradient(90deg, #193283 0%, #060B1D 100%);
@@ -802,7 +868,7 @@ transition: ease 0.3s;
     width: 81px;
     background-color: #F3F3F3;
     border-radius: 15px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 @media screen and (max-width: 500px) {

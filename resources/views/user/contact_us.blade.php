@@ -45,8 +45,8 @@
                             <div>
                                 <textarea name="message" placeholder="Message"></textarea>
                             </div>
-                            <div>
-                                <a href="javascript:void(0);" class="g-active w-100 border-0 py-3" id="sendMessage">Send Message</a>
+                            <div class="my-3">
+                                <a href="javascript:void(0);" class="g-active w-100 border-0" id="sendMessage">Send Message</a>
                             </div>
                         </form>
                     </div>
