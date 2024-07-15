@@ -612,6 +612,9 @@ transition: ease 0.3s;
   height: 100vh;
 }
 @media (max-width:767px){
+  .about-us-banner {
+    background-position: right;
+}
   .mission-vision-banner{
     height: fit-content;
   }
@@ -640,6 +643,18 @@ transition: ease 0.3s;
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+.product-top-banner::after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  content: '';
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity: 0.8;
 }
 
 /* ------------------contact page css ------------------------- */
@@ -669,6 +684,11 @@ transition: ease 0.3s;
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+@media (max-width:767px){
+  .services-banner{
+    background-position: left;
+  }
 }
 
 /* ------------------------ career page css --------------------------- */
@@ -875,6 +895,12 @@ transition: ease 0.3s;
   .item-logo {
     /* min-height: 200px;
     min-width: 200px; */
+  }
+}
+
+@media (min-width: 576px){
+  .w-md-50{
+    width: 50%;
   }
 }
 *::-webkit-scrollbar { 

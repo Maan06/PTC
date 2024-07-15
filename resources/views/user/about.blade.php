@@ -124,7 +124,7 @@
                 <h2 class="text-white display-2 fw-semibold">Mission <br> & Vision</h2>
 
                 <div class="d-md-flex position-relative z-1 ">
-                    <div class="col-md-4 mt-2">
+                    <div class="col-md-4 py-4">
                         <div class="mission-card bg-white rounded-4 h-100 mx-2 px-3 py-2">
                             <div><img src="{{asset('assets/images/icons/target.png')}}" alt=""></div>
                             <h3 class="main-color my-3">Mission Statement</h3>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mt-2">
+                    <div class="col-md-4 py-4">
                         <div class="mission-card bg-white rounded-4 h-100 mx-2 px-3 py-2">
                             <div><img src="{{asset('assets/images/icons/eye-visible.png')}}" alt=""></div>
                             <h3 class="main-color my-3">Vision Statement</h3>

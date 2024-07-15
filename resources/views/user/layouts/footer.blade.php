@@ -2,7 +2,7 @@
     <footer style="background-color: #F6F6F6;">
         <div class="container-lg py-5">
             <div class="d-flex flex-wrap">
-                <div class="col-md-3 col-sm-4 col-12 my-3">
+                <div class="col-md-3 col-sm-4 col-12 my-3 text-center text-sm-start">
                     <div><img src="{{asset('assets/images/logo-footer.png')}}" alt="" class="logo"></div>
                     <ul class="company-detail p-0 mt-4">
                         <li><a>Pilare Trading Company, India</a></li>
@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-3 col-sm-4 col-6 my-3">
 
-                    <ul class="p-0 w-50 mx-sm-auto">
+                    <ul class="p-0 w-md-50 mx-sm-auto text-center text-sm-start">
                         <li class="mb-3"><a href="{{route('index')}}"
                                 class="text-decoration-none text-black text-capitalize fs-5">Home</a></li>
                         <li class="mb-3"><a href="{{route('about')}}"
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-md-3 col-sm-4 col-6 my-3">
 
-                    <ul class="p-0 w-50 mx-sm-auto">
+                    <ul class="p-0 w-md-50 mx-sm-auto text-center text-sm-start">
                         <li class="mb-3"><a href="{{route('products')}}"
                                 class="text-decoration-none text-black text-capitalize fs-5">Products</a></li>
                         <li class="mb-3"><a href="{{route('career')}}"
@@ -33,7 +33,7 @@
                                 class="text-decoration-none text-black text-capitalize fs-5">Contact us</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 my-3">
+                <div class="col-md-3 col-sm-6 col-12 my-3 text-center text-sm-start">
                     <h2 class="fw-semibold text-capitalize mb-4">Get in touch
                         <br> with us
                     </h2>
@@ -42,7 +42,7 @@
                             href="{{route('contact_us')}}">Contact
                             Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <ul class="p-0 footer-sc-icons d-flex mt-4">
+                    <ul class="p-0 footer-sc-icons d-flex mt-4 justify-content-center justify-content-sm-start">
                         <li>
                             <a href="https://www.facebook.com/people/Pilare-Trading-Company/61559142998770/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f ms-0"></i></a>
                         </li>
